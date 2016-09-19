@@ -1,0 +1,38 @@
+<?php
+/**
+ *
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function not_dead_yet_menu() {
+  /*
+   *$items['blog'] = array(
+   *  'title' => 'blogs',
+   *  'page callback' => 'blog_page',
+   *  'access arguments' => array('access content'),
+   *  'type' => MENU_SUGGESTED_ITEM,
+   *);
+   */
+  $items['am/i/dead/yet'] = array(
+    'title' => 'Is we dead?',
+    'page callback' => 'not_dead_yet_page',
+    'access arguments' => array('access content'),
+  );
+
+  return $items;
+}
+
+/**
+ * [not_dead_yet_page description]
+ * @return [type] [description]
+ */
+function not_dead_yet_page() {
+  $time = time();
+  $formatted_time = format_date($time, "custom", "F j Y, H:i:s");
+  watchdog("not_dead_yet", "I'm not dead yet: " . $formatted_time, array(), WATCHDOG_DEBUG);
+  $content = array();
+  $content["content"]["#markup"] = "<h3>I'm not dead yet: " . $formatted_time . "</h3>";
+  return $content;
+}
