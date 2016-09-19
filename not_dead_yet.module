@@ -7,14 +7,6 @@
  * Implements hook_menu().
  */
 function not_dead_yet_menu() {
-  /*
-   *$items['blog'] = array(
-   *  'title' => 'blogs',
-   *  'page callback' => 'blog_page',
-   *  'access arguments' => array('access content'),
-   *  'type' => MENU_SUGGESTED_ITEM,
-   *);
-   */
   $items['am/i/dead/yet'] = array(
     'title' => 'Is we dead?',
     'page callback' => 'not_dead_yet_page',
@@ -25,8 +17,7 @@ function not_dead_yet_menu() {
 }
 
 /**
- * [not_dead_yet_page description]
- * @return [type] [description]
+ * Return markup to the page with the current day/time, and log to watchdog.
  */
 function not_dead_yet_page() {
   $time = time();
