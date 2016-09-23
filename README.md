@@ -6,7 +6,7 @@ Maintainers: [jbickar](https://github.com/jbickar), [sherakama](https://github.c
 [Changelog.txt](CHANGELOG.txt)
 
 The Not Dead Yet module is used to check whether we're dead.
-
+The blacknight branch refers to a particularly dark evening-time, not a warrior.
 
 Installation
 ---

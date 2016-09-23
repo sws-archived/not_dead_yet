@@ -1,6 +1,20 @@
 <?php
 /**
- *
+ * @file
+ * Is a very fine file.
+ */
+
+/**
+ * How long till dead
+ * @param  integer $time [description]
+ * @return [type]        [description]
+ */
+function stone_dead_in($time = 60) {
+  return $time;
+}
+
+/**
+ * HI - How are you .
  */
 
 /**
@@ -26,4 +40,11 @@ function not_dead_yet_page() {
   $content = array();
   $content["content"]["#markup"] = "<h3>I'm not dead yet: " . $formatted_time . "</h3>";
   return $content;
+}
+
+/**
+ * Flying monkeys
+ */
+function flyingMonkeys() {
+  
 }

@@ -4,3 +4,4 @@ core = 7.x
 version = 7.x-1.x-dev
 project = not_dead_yet
 project status url = https://github.com/SU-SWS/not_dead_yet
+dependencies[] = bad_judgement

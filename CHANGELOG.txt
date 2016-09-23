@@ -4,3 +4,4 @@ Version 7.x-1.0                                                       YYYY-MM-DD
 --------------------------------------------------------------------------------
 
 - Initial Release
+- I made this way more awesome
