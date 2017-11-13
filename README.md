@@ -1,4 +1,4 @@
-#[Not Dead Yet](https://github.com/SU-SWS/not_dead_yet)
+# [Not Dead Yet](https://github.com/SU-SWS/not_dead_yet)
 ##### Version: 7.x-1.x
 
 Maintainers: [jbickar](https://github.com/jbickar), [sherakama](https://github.com/sherakama),  [boznik](https://github.com/boznik),
